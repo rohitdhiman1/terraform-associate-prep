@@ -1,14 +1,47 @@
-pom.xml
-pom.xml.asc
-*.jar
-*.class
-/lib/
-/classes/
-/target/
-/checkouts/
-.lein-deps-sum
-.lein-repl-history
-.lein-plugins/
-.lein-failures
-.nrepl-port
-.cpcache/
+# Terraform state files — never commit these
+*.tfstate
+*.tfstate.backup
+*.tfstate.d/
+
+# Terraform working directory
+.terraform/
+.terraform.lock.hcl
+
+# Saved plan files
+*.tfplan
+
+# Variable files that may contain secrets
+*.auto.tfvars
+# terraform.tfvars  ← intentionally NOT ignored so default values are tracked
+#                      Add to gitignore per-directory if it contains secrets
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Override files (local developer overrides — not for sharing)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform Cloud credential file
+.terraformrc
+terraform.rc
+
+# Lab output files generated during exercises
+labs/**/output/
+labs/**/*.txt
+labs/**/*.conf
+labs/**/servers/
+labs/**/app_config.txt
+labs/**/api_config.txt
+labs/**/summary.txt
+labs/**/inventory.txt
+labs/**/workspace-*.txt
+labs/**/existing_config.json
+labs/**/managed.txt
+labs/**/generated.tf
+
+# macOS
+.DS_Store
