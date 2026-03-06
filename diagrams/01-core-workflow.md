@@ -18,11 +18,7 @@ flowchart TD
     Diff -->|No changes| UpToDate(["No changes. Infrastructure is up-to-date."])
     Diff -->|Has changes| Review["Review plan output"]
 
-    Review --> Symbols["Plan Symbols:
-    + create
-    ~ update in-place
-    -/+ replace
-    - destroy"]
+    Review --> Symbols["Plan Symbols:<br>+ create<br>~ update in-place<br>-/+ replace<br>- destroy"]
     Symbols --> Apply
 
     Apply["terraform apply"]

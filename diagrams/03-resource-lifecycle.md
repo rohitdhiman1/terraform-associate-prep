@@ -15,8 +15,8 @@ flowchart TD
     ForceNew -->|Yes| Replace["-/+ Destroy and recreate"]
 
     Replace --> CBD{create_before_destroy?}
-    CBD -->|false / default| DefaultOrder["1. Destroy old\n2. Create new"]
-    CBD -->|true| ReverseOrder["1. Create new\n2. Destroy old"]
+    CBD -->|false / default| DefaultOrder["1. Destroy old<br>2. Create new"]
+    CBD -->|true| ReverseOrder["1. Create new<br>2. Destroy old"]
 
     Compare --> Removed{Resource removed from config?}
     Removed -->|Yes| PreventCheck{prevent_destroy = true?}
@@ -30,15 +30,15 @@ flowchart TD
 
     subgraph Lifecycle Meta-Arguments
         direction TB
-        L1["create_before_destroy = true\nZero-downtime replacements"]
-        L2["prevent_destroy = true\nSafety net for critical resources"]
-        L3["ignore_changes = [attr]\nTolerate external modifications"]
-        L4["replace_triggered_by = [ref]\nForce replace when dependency changes"]
+        L1["create_before_destroy = true<br>Zero-downtime replacements"]
+        L2["prevent_destroy = true<br>Safety net for critical resources"]
+        L3["ignore_changes = [attr]<br>Tolerate external modifications"]
+        L4["replace_triggered_by = [ref]<br>Force replace when dependency changes"]
     end
 
     subgraph Manual Actions
         direction TB
-        M1["terraform apply -replace=ADDR\nForce recreation without config change"]
+        M1["terraform apply -replace=ADDR<br>Force recreation without config change"]
     end
 
     style InPlace fill:#FFF9C4,color:#000

@@ -7,11 +7,11 @@ flowchart LR
     subgraph Precedence["Variable Precedence (lowest → highest)"]
         direction TB
         P1["1. Default value in variables.tf"]
-        P2["2. Environment variable\nTF_VAR_name"]
-        P3["3. terraform.tfvars\n(auto-loaded)"]
-        P4["4. *.auto.tfvars\n(alphabetical order)"]
+        P2["2. Environment variable<br>TF_VAR_name"]
+        P3["3. terraform.tfvars<br>(auto-loaded)"]
+        P4["4. *.auto.tfvars<br>(alphabetical order)"]
         P5["5. -var-file=... flag"]
-        P6["6. -var='name=value' flag\n(CLI — highest wins)"]
+        P6["6. -var='name=value' flag<br>(CLI — highest wins)"]
 
         P1 --> P2 --> P3 --> P4 --> P5 --> P6
     end
@@ -28,9 +28,9 @@ flowchart LR
 
     subgraph Rules["Key Rules"]
         direction TB
-        R1["Required var with no default\n→ Terraform prompts or errors"]
-        R2["sensitive = true\n→ Redacted in plan output\n→ Still visible in state!"]
-        R3["validation block\n→ Custom error on bad input"]
+        R1["Required var with no default<br>→ Terraform prompts or errors"]
+        R2["sensitive = true<br>→ Redacted in plan output<br>→ Still visible in state!"]
+        R3["validation block<br>→ Custom error on bad input"]
     end
 
     style P1 fill:#E3F2FD,color:#000
