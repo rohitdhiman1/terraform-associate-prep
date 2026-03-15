@@ -27,12 +27,12 @@
 
 | Day | Topic | Notes | Lab |
 |---|---|---|---|
-| 1 | Exam overview + IaC concepts | `notes/00-exam-overview.md` `notes/01-iac-concepts.md` | — |
-| 2 | Terraform purpose + core workflow | `notes/02-terraform-purpose.md` `notes/03-core-workflow.md` | `labs/01-setup-and-first-config` |
-| 3 | HCL syntax deep dive | `notes/04-hcl-syntax.md` | `labs/02-hcl-variables` (Part A) |
-| 4 | Variables, outputs, locals | `notes/05-variables-outputs-locals.md` | `labs/02-hcl-variables` (Part B) |
-| 5 | Providers + plugin architecture | `notes/06-providers.md` | `labs/01-setup-and-first-config` (provider pinning) |
-| 6 | Review + Week 1 quiz | `mock-exams/question-bank/week1-quiz.md` | — |
+| 1 | Exam overview + IaC concepts | [00-exam-overview](notes/00-exam-overview.md) [01-iac-concepts](notes/01-iac-concepts.md) | — |
+| 2 | Terraform purpose + core workflow | [02-terraform-purpose](notes/02-terraform-purpose.md) [03-core-workflow](notes/03-core-workflow.md) | [lab-01](labs/01-setup-and-first-config/README.md) |
+| 3 | HCL syntax deep dive | [04-hcl-syntax](notes/04-hcl-syntax.md) | [lab-02](labs/02-hcl-variables/README.md) (Part A) |
+| 4 | Variables, outputs, locals | [05-variables-outputs-locals](notes/05-variables-outputs-locals.md) | [lab-02](labs/02-hcl-variables/README.md) (Part B) |
+| 5 | Providers + plugin architecture | [06-providers](notes/06-providers.md) | [lab-01](labs/01-setup-and-first-config/README.md) (provider pinning) |
+| 6 | Review + Week 1 quiz | [week1-quiz](mock-exams/question-bank/week1-quiz.md) | — |
 | 7 | Rest / catch-up | — | — |
 
 ---
@@ -42,12 +42,12 @@
 
 | Day | Topic | Notes | Lab |
 |---|---|---|---|
-| 8 | Resource lifecycle | `notes/07-resource-lifecycle.md` | `labs/03-resource-lifecycle` |
-| 9 | Data sources | `notes/08-data-sources.md` | `labs/04-data-sources` |
-| 10 | State — local, concepts, commands | `notes/09-state-management.md` (Part 1) | `labs/05-state-manipulation` (Part A) |
-| 11 | State — remote backends + locking | `notes/09-state-management.md` (Part 2) | `labs/08-remote-backend-s3` *(CloudGuru)* |
-| 12 | Beyond core workflow (import, taint, refresh) | `notes/10-beyond-core-workflow.md` | `labs/12-import` |
-| 13 | Review + Week 2 quiz | `mock-exams/question-bank/week2-quiz.md` | — |
+| 8 | Resource lifecycle | [07-resource-lifecycle](notes/07-resource-lifecycle.md) | [lab-03](labs/03-resource-lifecycle/README.md) |
+| 9 | Data sources | [08-data-sources](notes/08-data-sources.md) | [lab-04](labs/04-data-sources/README.md) |
+| 10 | State — local, concepts, commands | [09-state-management](notes/09-state-management.md) (Part 1) | [lab-05](labs/05-state-manipulation/README.md) (Part A) |
+| 11 | State — remote backends + locking | [09-state-management](notes/09-state-management.md) (Part 2) | [lab-08](labs/08-remote-backend-s3/README.md) *(CloudGuru)* |
+| 12 | Beyond core workflow (import, taint, refresh) | [10-beyond-core-workflow](notes/10-beyond-core-workflow.md) | [lab-12](labs/12-import/README.md) |
+| 13 | Review + Week 2 quiz | [week2-quiz](mock-exams/question-bank/week2-quiz.md) | — |
 | 14 | Rest / catch-up | — | — |
 
 ---
@@ -57,12 +57,12 @@
 
 | Day | Topic | Notes | Lab |
 |---|---|---|---|
-| 15 | Modules — consuming public modules | `notes/11-modules.md` (Part 1) | `labs/06-modules-using` |
-| 16 | Modules — writing your own | `notes/11-modules.md` (Part 2) | `labs/07-modules-writing` |
-| 17 | Functions + expressions | `notes/12-functions-expressions.md` | `labs/11-functions-expressions` |
-| 18 | Workspaces | `notes/13-workspaces.md` | `labs/10-workspaces` |
-| 19 | Terraform Cloud + Provisioners | `notes/14-terraform-cloud.md` `notes/15-provisioners.md` | `labs/09-terraform-cloud` |
-| 20 | Review + Week 3 quiz | `mock-exams/question-bank/week3-quiz.md` | — |
+| 15 | Modules — consuming public modules | [11-modules](notes/11-modules.md) (Part 1) | [lab-06](labs/06-modules-using/README.md) |
+| 16 | Modules — writing your own | [11-modules](notes/11-modules.md) (Part 2) | [lab-07](labs/07-modules-writing/README.md) |
+| 17 | Functions + expressions | [12-functions-expressions](notes/12-functions-expressions.md) | [lab-11](labs/11-functions-expressions/README.md) |
+| 18 | Workspaces | [13-workspaces](notes/13-workspaces.md) | [lab-10](labs/10-workspaces/README.md) |
+| 19 | Terraform Cloud + Provisioners | [14-terraform-cloud](notes/14-terraform-cloud.md) [15-provisioners](notes/15-provisioners.md) | [lab-09](labs/09-terraform-cloud/README.md) |
+| 20 | Review + Week 3 quiz | [week3-quiz](mock-exams/question-bank/week3-quiz.md) | — |
 | 21 | Rest / catch-up | — | — |
 
 ---
@@ -72,12 +72,12 @@
 
 | Day | Activity |
 |---|---|
-| 22 | Mock Exam 1 (timed, 60 min) → review wrong answers |
+| 22 | [Mock Exam 1](mock-exams/exam-01.md) (timed, 60 min) → review wrong answers |
 | 23 | Deep-dive notes on weak areas from Exam 1 |
-| 24 | Mock Exam 2 (timed, 60 min) → review wrong answers |
+| 24 | [Mock Exam 2](mock-exams/exam-02.md) (timed, 60 min) → review wrong answers |
 | 25 | Deep-dive notes on weak areas from Exam 2 |
-| 26 | Case studies — read `case-studies/` |
-| 27 | Mock Exam 3 (timed, 60 min) → review wrong answers |
+| 26 | Case studies — [01-team-state](case-studies/01-team-state-management.md), [02-multi-env](case-studies/02-multi-environment-strategy.md), [03-module-refactor](case-studies/03-module-refactoring.md) |
+| 27 | [Mock Exam 3](mock-exams/exam-03.md) (timed, 60 min) → review wrong answers |
 | 28 | Final review: gotchas, edge cases, command cheatsheet |
 
 **Book exam during Week 4 if not already booked.**
